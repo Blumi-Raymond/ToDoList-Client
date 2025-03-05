@@ -1,7 +1,7 @@
 import axios from 'axios';
 // import jwt_decode from "jwt-decode";
 
-axios.defaults.baseURL = 'http://localhost:5144/items';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 
 setAuthorizationBearer();
 function saveAccessToken(authResult) {
