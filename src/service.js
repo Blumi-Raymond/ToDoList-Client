@@ -1,7 +1,7 @@
 import axios from 'axios';
 // import jwt_decode from "jwt-decode";
 
-axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+axios.defaults.baseURL = "https://todolist-server-t5gf.onrender.com/items"
 
 setAuthorizationBearer();
 function saveAccessToken(authResult) {
