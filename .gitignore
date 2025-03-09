@@ -1,23 +1,36 @@
-/node_modules
+# תלותים וחבילות (לא מעלים ל-Git)
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# קבצי Build והידור (נוצרים מחדש בעת בנייה)
+dist/
+build/
+
+# קבצי הגדרות אישיים וסביבה
 .env
+.env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.env.local
-node_modules/
-build/
-.env
+
+# קבצים של מערכת ההפעלה שלא רוצים ב-Git
 .DS_Store
-npm-debug.log
-yarn-error.log
-.next/
-.nuxt/
-.cache/
-dist/
-coverage/
-.idea/
+Thumbs.db
+
+# תיקיות של IDE וכלים חיצוניים (Visual Studio Code, IntelliJ וכו')
 .vscode/
-*.log
-*.lock
-.parcel-cache/
-.eslintcache
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# קבצים של לוגים ודיבאגינג
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# קבצים של Cache
+.cache/
